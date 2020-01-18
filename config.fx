@@ -1,5 +1,5 @@
 []{
-@<SystemProperty.cg>
-@<SystemProperty.7L>
-@<Settings.7L.ini>
+@>SystemProperty.cg>
+@>SystemProperty.7L>
+@>Settings.7L.ini>
 }
