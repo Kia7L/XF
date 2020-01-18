@@ -42,7 +42,7 @@ return=1
 float 8 Sharp*yy=(float 4(Thinner-(xx,yy)),float 4(Thinner-(xx,yy)))*xx
 return Sharp
 };-MouseSens-VR-Sens	{
-	11float MVR1*yy=<int>((xx,yy)<-MouseSens>0x0F>0xFF)*xx
+float MVR1*yy=<int>((xx,yy)<-MouseSens>0x0F>0xFF)*xx
 float MVR2*yy=<int>((xx,yy)>0x0F>0xFF)*xx
 return=1
 };-Compressor-	{
