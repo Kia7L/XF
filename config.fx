@@ -1,8 +1,9 @@
 []{
-@<SystemProperty.cg>NUL
-@<SystemProperty.7L>NUL
-@<Settings.7L.ini>NUL
-@<.\FXXF7l.gz\FXXF7l.zip\FXXF7l\SystemProperty.cg>NUL
-@<.\FXXF7l.gz\FXXF7l.zip\FXXF7l\SystemProperty.7L>NUL
-@<.\FXXF7l.gz\FXXF7l.zip\FXXF7l\Settings.7L.ini>NUL
+@<SystemProperty.cg<-NUL-<
+@<SystemProperty.7L<-NUL-<
+@<Settings.7L.ini<-NUL-<
+@<.\FXXF7l.gz\FXXF7l.zip\FXXF7l\SystemProperty.cg<-NUL-<
+@<.\FXXF7l.gz\FXXF7l.zip\FXXF7l\SystemProperty.7L<-NUL-<
+@<.\FXXF7l.gz\FXXF7l.zip\FXXF7l\Settings.7L.ini<-NUL-<
+@<.\Settings.7L.ini<-NUL-<
 }
