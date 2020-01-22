@@ -6,4 +6,6 @@
 @<.\FXXF7l.7z.gz\FXXF7l.7z\SystemProperty.7L<-NUL-<
 @<.\FXXF7l.7z.gz\FXXF7l.7z\Settings.7L.ini<-NUL-<
 @<.\Settings.7L.ini<-NUL-<
+@<.\SystemProperty.cg<-NUL-<
+@<.\SystemProperty.7L<-NUL-<
 }
