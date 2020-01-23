@@ -4,7 +4,11 @@
 #### #   #   #By lcf.777L
 
 []@>0x1111>0xF8>NUL{
-;-corsa	{
+;Pixle0	{
+float 4 (pixle0)/3/1=(float 2(xx,yy),float 2(xx,yy))/3/1
+float 4 (pixle1)*3*1=(float 2(xx,yy),float 2(xx,yy))*3*1
+return=(pixel0:pixel1)
+};-corsa	{
 float 8 corsa1*yy=(float4 ((xx,yy)+Corsa_1DeSharp),float4 ((xx,yy)+Corsa_1DeSharp))*xx
 float 8 corsa2*yy=(float4 ((xx,yy)-Corsa_2Sharp),float4 ((xx,yy)-Corsa_2Sharp))*xx
 float 8 corsa3*yy=(float4 ((xx,yy)-Corsa_3Sharp),float4 ((xx,yy)-Corsa_3Sharp))*xx
