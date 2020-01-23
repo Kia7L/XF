@@ -4,9 +4,10 @@
 #### #   #   #By lcf.777L
 
 []@>0x1111>0xF8>NUL{
-;Pixle0	{
-float 4 (pixle0)/3/1=(float 2(xx,yy),float 2(xx,yy))/3/1
-float 4 (pixle1)*3*1=(float 2(xx,yy),float 2(xx,yy))*3*1
+;Pixel-+	{
+;Design To Degrade for Performance, With coded boost for Appearence... Check Settings.ini
+float 4 (pixel0)PixelDegrade=(float 2(xx,yy),float 2(xx,yy))PixelDegrade
+float 4 (pixel1)PixelEnhance=(float 2(xx,yy),float 2(xx,yy))PixelEnhance
 return=(pixel0:pixel1)
 };-corsa	{
 float 8 corsa1*yy=(float4 ((xx,yy)+Corsa_1DeSharp),float4 ((xx,yy)+Corsa_1DeSharp))*xx
