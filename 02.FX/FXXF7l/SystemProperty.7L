@@ -1,0 +1,91 @@
+#     #######
+#          #
+#         #
+#### #   #   #By lcf.777L
+
+[]@>0x1111>0xF8>NUL{
+;Pixel-+	{
+;Design To Degrade for Performance, With coded boost for Appearence... Check Settings.ini
+float 4 (pixel0)PixelDegrade=(float 2(xx,yy),float 2(xx,yy))PixelDegrade
+float 4 (pixel1)PixelEnhance=(float 2(xx,yy),float 2(xx,yy))PixelEnhance
+return=(pixel0:pixel1)
+};-corsa	{
+float 8 corsa1*yy=(float4 ((xx,yy)+Corsa_1DeSharp),float4 ((xx,yy)+Corsa_1DeSharp))*xx
+float 8 corsa2*yy=(float4 ((xx,yy)-Corsa_2Sharp),float4 ((xx,yy)-Corsa_2Sharp))*xx
+float 8 corsa3*yy=(float4 ((xx,yy)-Corsa_3Sharp),float4 ((xx,yy)-Corsa_3Sharp))*xx
+return=(corsa1<-->corsa2<-->corsa3)
+};-FXAA-7L	{
+float cpu=-80000>?-1000<1
+float Ramp=cpu>?%7
+float PrePerform=0.9
+float Performance=4
+float Average=6.8
+float Quality=9.2
+float FXAA=(float 4(Ramp,(PrePerformane*2),(Performance*2),(Average*2),Quality)-Sharpener),(float 4(Ramp,(PrePerformane*2),(Performance*2),(Average*2),Quality)-Sharpener);
+return=FXAA
+};-Matrix-	{
+float 4*8 MatrixX=(Yellow,Purple,Pink,Red,Green,Blue,Black,White) 
+float 4 Yellow=(Red,(Green-5),0,(Bright-5))
+float 4 Purple=((Red-150),0,Blue,(Bright-5))
+float 4 Pink=(Red,10,(Blue-120),(Bright-5))
+float 4 Black=(0,0,0,Bright)
+float 4 White=(Red,Green,Blue,(Bright-5))
+float Material Formula*yy=(MatrixX)*xx
+return Formula
+float Material Enhanced*yy=(xx/2/+1/-1/0/0,yy/2/+1/-1/0/0)*xx
+return Enhanced
+};-FishEyeGraphics-	{
+float 1 Material FolcalPoint1*yy=float 4(xx+5,yy+5),255*xx
+float 2 Material FolcalPoint2*yy=float 4(xx-10,yy-10),245*xx
+float 3 Material FolcalPoint3*yy=float 4(xx+10,yy+10),235*xx
+float 4 Material FolcalPoint4*yy=float 4(xx-20,yy-20),225*xx
+float 5 Material FolcalPoint5*yy=float 4(xx+20,yy+20),200*xx
+float 6 Material FolcalPoint6*yy=float 4(xx-30,yy-30),175*xx
+float 7 Material FolcalPoint7*yy=float 4(xx+30,yy+30),150*xx
+float 8 Material FolcalPoint8*yy=float 4(xx-40,yy-40),125*xx
+float 9 Material FolcalPoint9*yy=float 4(xx+40,yy+40),100*xx
+float 10 Material FolcalPoint10*yy=float 4(xx-50,yy-50),75*xx
+float 11 Material FolcalPoint11*yy=float 4(xx+50,yy+50),50*xx
+float 12 Material FolcalPoint12*yy=float 4(xx-90,yy-90),25*xx
+return=1
+};-EnhanceSharp-	{
+float 8 Sharp*yy=(float 4(Thinner-(xx,yy)),float 4(Thinner-(xx,yy)))*xx
+return Sharp
+};-MouseSens-VR-Sens	{
+float MVR1*yy=<int>((xx,yy)<--MouseSens>0x0F>0xFF)*xx
+float MVR2*yy=<int>((xx,yy)>0x0F>0xFF)*xx
+return=1
+};-Compressor-	{
+float Compile=(0xFFFFFFF/0x01>NUL)
+return=1
+};-Hemmy-{
+float RAM=(0x13,0x03,0x00,0xFF)>NUL|(?100%)|dot={(\|*|_|-|.|,|?|!|%|$|~|@)} #include (dot.*)
+return=1
+};-VR-COMPATIBLE-ENABLED-	{
+float VR1=(void=>sqmapi.dll)
+float VR2=(void=>$RVUXO7.dll)
+float compad=(VR1,VR2)
+return 1
+};CUBED ({	{
+float >0x99->0x01 DEMENSION=(float 4 (xx,yy)),(float 4 (xx,yy))|>0x99->0x01
+DEMENSIONS=Camera|Web|Cam|Lense)
+};CUBED 2*({
+float >0x99->0x01 DEMENSION=(float 4 (xx,yy)),(float 4 (xx,yy))|>0x99->0x01
+DEMENSIONS=Camera|Web|Cam|Lense)
+};CUBED 4*({
+float >0x99->0x01 DEMENSION=(float 4 (xx,yy)),(float 4 (xx,yy))|>0x99->0x01
+DEMENSIONS=Camera|Web|Cam|Lense)
+return 1}
+};QUE	{
+float 0xF8 KM7L !@><0x1110111><0xF8><-NUL;
+return=1
+};BlackMissoury	{
+float How_Much=25;
+float 64 ME=float 4 (255,255,255,(0<100))| && ping -n How_Much 192.168.1.1 | (0,0,0,(0<255)) && <NUL>
+float 32 ME*0x99/0x4D=(float 4(foat 2(xx,yy),float 2(xx,yy)))
+Return=1
+};Audio Volume*{
+bitrate1=60,80,128,200,500,800,1000|((Base<->Mid<->High)*VOLBoost1)
+bitrate2=((Base<->Mid<->High)*VOLBoost2)
+return=bitrate2
+}	}
