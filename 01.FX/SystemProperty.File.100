@@ -6,16 +6,16 @@
 []@>0x1111>0xF8>NUL{
 ;Pixel-+	{
 ;Design To Degrade for Performance, With coded boost for Appearence... Check Settings.ini
-float 4 (pixel0)PixelDegrade=(float 2(xx,yy),float 2(xx,yy))PixelDegrade
-float 4 (pixel1)PixelEnhance=(float 2(xx,yy),float 2(xx,yy))PixelEnhance
-return=(pixel0:pixel1)
+float 4 (pixel0)*yy=((float 2(xx,yy),float 2(xx,yy))PixelDegrade)*xx
+float 4 (pixel1)*yy=((float 2(xx,yy),float 2(xx,yy))PixelEnhance)*xx
+return=(pixel0|pixel1)
 };-corsa	{
 float 8 corsa1*yy=(float4 ((xx,yy)+Corsa_1DeSharp),float4 ((xx,yy)+Corsa_1DeSharp))*xx
 float 8 corsa2*yy=(float4 ((xx,yy)-Corsa_2Sharp),float4 ((xx,yy)-Corsa_2Sharp))*xx
 float 8 corsa3*yy=(float4 ((xx,yy)-Corsa_3Sharp),float4 ((xx,yy)-Corsa_3Sharp))*xx
 return=(corsa1<-->corsa2<-->corsa3)
 };-FXAA-7L	{
-float cpu=-80000>?-1000<1
+float cpu=(-90000>?-500)/1
 float Ramp=cpu>?%7
 float PrePerform=0.9
 float Performance=4
@@ -80,8 +80,8 @@ return 1}
 float 0xF8 KM7L !@><0x1110111><0xF8><-NUL;
 return=1
 };BlackMissoury	{
-float How_Much=25;
-float 64 ME=float 4 (255,255,255,(0<100))| && ping -n How_Much 192.168.1.1 | (0,0,0,(0<255)) && <NUL>
+float HowMuch=25;
+float 64 ME=float 4 (255,255,255,(0<100))| && ping -n HowMuch 192.168.1.1 | (0,0,0,(0<255)) && <NUL>
 float 32 ME*0x99/0x4D=(float 4(foat 2(xx,yy),float 2(xx,yy)))
 Return=1
 };Audio Volume*{
