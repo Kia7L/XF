@@ -21,8 +21,8 @@ return=(corsa1<-->corsa2<-->corsa3)
 ;-FXAA-7L
 	{
 float cpu=310
-float Ramp=100<->cpu<->400
-float PrePerform=0.9
+float Ramp=-100<->cpu<->400
+float PrePerform=0.7
 float Performance=4
 float Average=6.8
 float Quality=9.2
@@ -38,9 +38,12 @@ float 4 Pink=(Red,10,(Blue-120),(Bright-5))
 float 4 Black=(0,0,0,Bright)
 float 4 White=(Red,Green,Blue,(Bright-5))
 float 4 Formula*yy=((MatrixX),(MatrixX))*xx
-return Formula
+return=Formula
+}
+;MATERIAL
+	{
 float 4 Material*yy=(float 2(xx/2/+1/-1/0/0,yy/2/+1/-1/0/0),float 2(xx/2/+1/-1/0/0,yy/2/+1/-1/0/0))*xx
-return 1
+return=1
 }
 ;-FishEyeGraphics-
 	{
@@ -71,12 +74,12 @@ return=1
 }
 ;-Compressor-
 	{
-float Compile=(0xFFFFFFF/0x01>NUL)
+float Compile=(0xFFFFFFF/=0x01>NUL)
 return=1
 }
 ;-Hemmy-
 {
-float RAM=(0x13,0x03,0x00,0xFF)>NUL|(?100%)|dot={(\|*|_|-|.|,|?|!|%|$|~|@)} #include (dot.*)
+float RAM=(0x13,0x03,0x00,0xFF>@|(100%)|dot={(\|*|_|-|.|,|?|!|%|$|~|@)} #include (dot.*)
 return=1
 }
 ;-VR-COMPATIBLE-ENABLED-
@@ -84,7 +87,7 @@ return=1
 float VR1=(void=>sqmapi.dll)
 float VR2=(void=>$RVUXO7.dll)
 float compad=(VR1,VR2)
-return 1
+return=1
 }
 ;CUBED 
 	{
@@ -101,7 +104,7 @@ DEMENSIONS=Camera|Web|Cam|Lense)
 float >0x99/->0x01 DEMENSION=(float 4 (xx,yy)),(float 4 (xx,yy))|>0x99/->0x01
 DEMENSIONS=Camera|Web|Cam|Lense)
 })
-return 1
+return=1
 }
 ;BlackMissoury	
 {
