@@ -4,6 +4,12 @@
 #### #   #   #By lcf.777L
 
 []{
+{
+;Polorized Screen
+float 4 Polor=(float 2(xx,yy),float 2(xx,yy))
+float 4 Polorized=Polor/1*0 11 
+}
+{
 ;Pixel-+	
 {
 ;Design To Degrade for Performance, With coded boost for Appearence... Check Settings.ini
