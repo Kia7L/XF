@@ -8,6 +8,13 @@
 ;Polorized Screen
 float 4 Polor=(float 2(xx,yy),float 2(xx,yy))
 float 4 Polorized=Polor/1*0 11 
+return=1
+}
+{
+;NegativePotentialSpeed
+float 4 Negative=(float 2(xx,yy),float 2(xx,yy))
+float 4 NegPotential=Negative|-77/-01/1*0 11 
+return=1
 }
 {
 ;Pixel-+	
@@ -48,7 +55,7 @@ return=Formula
 }
 ;MATERIAL
 	{
-float 4 Material*yy=(float 2(xx/2/+1/-1/0/0,yy/2/+1/-1/0/0),float 2(xx/2/+1/-1/0/0,yy/2/+1/-1/0/0))*xx
+float 4 Material*yy=(float 2(xx/2/+1/-1/0*0,yy/2/+1/-1/0*0),float 2(xx/2/+1/-1/0*0,yy/2/+1/-1/0*0))*xx
 return=1
 }
 ;-FishEyeGraphics-
@@ -80,7 +87,7 @@ return=1
 }
 ;-Compressor-
 	{
-float Compile=(0xFFFFFFF/=0x01>NUL)
+float Compile=(0xFFFFFFF/=0x01)
 return=1
 }
 ;-Hemmy-
