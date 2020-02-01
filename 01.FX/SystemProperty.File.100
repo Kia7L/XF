@@ -10,13 +10,16 @@ float 4 Polor=(float 2(xx,yy),float 2(xx,yy))
 float 4 Polorized=Polor/1*0 11 
 return=1
 }
-{
-;NegativePotentialSpeed
+;BarGrid {
+float 4 Graph=(float 2(xx,yy),float 2(xx,yy))
+float 4 Grid=Graph[*11+1/0 11]
+return=1
+}
+;NegativePotentialSpeed {
 float 4 Negative=(float 2(xx,yy),float 2(xx,yy))
 float 4 NegPotential=Negative|-77/-01/1*0 11 
 return=1
 }
-{
 ;Pixel-+	
 {
 ;Design To Degrade for Performance, With coded boost for Appearence... Check Settings.ini
