@@ -7,27 +7,27 @@
 {
 ;Polorized Screen
 float 4 Polor=(float 2(xx,yy),float 2(xx,yy))
-float 4 Polorized=Polor/1*0 11 
+float 4 Polorized=Polor/(1*0) 11 
 return=1
 }
 ;BarGrid {
 float 4 Graph=(float 2(xx,yy),float 2(xx,yy))
-float 4 Grid=Graph[*11+1/0 11]
+float 4 Grid=Graph*[11+(1/0)*0 11]
 return=1
 }
 ;NegativePotentialSpeed {
 float 4 Negative=(float 2(xx,yy),float 2(xx,yy))
-float 4 NegPotential=Negative|-77/-01/1*0 11 
+float 4 NegPotential=Negative|-77/+1/-1/(+1*0) 11 
 return=1
 }
 ;Pixel-+	
 {
 ;Design To Degrade for Performance, With coded boost for Appearence... Check Settings.ini
-float 4 (pixel0)*yy=((float 2(xx,yy),float 2(xx,yy))PixelDegrade)*xx
-float 4 (pixel1)*yy=((pixel0)PixelEnhance)*xx
+float 4 (pixe.l0)*yy=((float 2(xx,yy),float 2(xx,yy))/PixelDegrade)*xx
+float 4 (pixe.l1)*yy=((pixel0)*PixelEnhance)*xx
 return=(pixel1)
 }
-;Coras-
+;Corsa-
 	{
 float 8 corsa1*yy=(float4 ((xx,yy)+Corsa_1DeSharp),float4 ((xx,yy)+Corsa_1DeSharp))*xx
 float 8 corsa2*yy=(float4 ((xx,yy)-Corsa_2Sharp),float4 ((xx,yy)-Corsa_2Sharp))*xx
@@ -79,13 +79,13 @@ return=1
 }
 ;-EnhanceSharp-
 	{
-float 8 Sharp*yy=(float 4(Thinner-(xx,yy)),float 4(Thinner-(xx,yy)))*xx
+float4 Sharp*yy=(float 2(Thinner-(xx,yy)),float 2(Thinner-(xx,yy)))*xx
 return Sharp
 }
-;-MouseSens-VR-Sens
-	{
-float MVR1*yy=<int>((xx,yy)<--MouseSens>0x0F>0xFF)*xx
-float MVR2*yy=<int>((xx,yy)>0x0F>0xFF)*xx
+;-Sens-VR-Sens-NEW-MY-7L-VERS.001
+	{ ;JUST ADD IN NAMES OF SYSTEMS.SYSTEM2.3.4...
+float1 OCULUS.CONTROLLER.MOUSE.VR.1*yy=<int><ScaleSens>((xx,yy)<-Sens>0x0FF>0xF)*xx 1
+float3 OCULUS.CONTROLLER.MOUSE.VR.2*yy=<int>((xx,yy)>0xFF>0xF)*xx 11
 return=1
 }
 ;-Compressor-
@@ -135,4 +135,10 @@ bitrate1=60,80,128,200,500,800,1000|((Base<->Mid<->High)*VOLBoost1)
 bitrate2=((Base<->Mid<->High)*VOLBoost2)
 return=bitrate2
 }	
+;SpeedNeeds
+{
+MEASURE.TIME=SONIC ;TESTING 7L GRADE
+float 11 SONIC=(float2 (xx,yy),float2 (xx,yy))
+SOM>=(-1200<-?@?->->4)
+}
 }
