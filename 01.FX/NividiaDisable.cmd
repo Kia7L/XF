@@ -5,8 +5,8 @@ mode 75,10
  cls
 set "NameofService1=NVIDIA Display Container LS" 
 set "service=service"
-set "action1=stop"
-set "action2=disabled"
+set "action1=Stopped"
+set "action2=Disabled"
 set "nircmd=C:\Windows\nircmd.exe"
 set "cecho=C:\Windows\cecho.exe"
 cls
