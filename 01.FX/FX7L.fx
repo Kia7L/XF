@@ -1,5 +1,5 @@
 []{
 ;1
-@<FX7L.inf>-NUL-<
-@<FX7L.ini>-NUL-<
+@<FX7L.inf>
+@<FX7L.ini>
 }
