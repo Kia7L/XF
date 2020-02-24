@@ -1,0 +1,29 @@
+[]{
+;-Involve--------
+;Oculus Quest-x,y Yours May Varry...
+xx=6920|Width
+yy=6080|Hieght
+Bright=0x1111
+Material=0x00 0x1111
+Thinner=100000
+ScaleSens=0x97
+Sens=-7
+SoundPower=100
+Sharpener=2000
+Max=(89+Base+Mid+Treble)
+Volume=+100
+
+;Volume-------
+Volume=90
+VolumeBoost1=10
+VolumeBoost2=-10
+Base=54
+Mid=22
+High=27
+Corsa_1DeSharp=0.9
+Corsa_2Sharp=2.00
+Corsa_3Sharp=1.00
+;PIXIE------------------------------
+PixelDegrade=/(2) 0 1111
+PixelEnhance=*(200)-Sharpener 0 1111
+}

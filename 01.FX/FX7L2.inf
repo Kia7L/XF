@@ -1,0 +1,20 @@
+[.fx]{
+Update=(10*100)
+
+[Variables]{
+Red=255
+Green=200
+Blue=172
+Fader=140
+Bright=240
+Shadow=50
+Blure=42
+Sharp=255
+Pixel=2
+Enhanced=255
+}
+
+[FX]{
+[float4 Shaper|Final=(float2 (xx,yy),float2 (xx,yy)) & float4 Pixie=(Shaper/Pixel)*Enhanced & float4 Color=(float3 (Red,Green,Blue,(Bright/-Shadow))) & float4 Final|Color=(Pixie+Blure-Sharp) & return Final][!Update][!Redraw]
+}
+	}

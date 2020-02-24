@@ -2,7 +2,8 @@
 ;;  #       #     ;;
 ;;  ### #  #  #   ;; #By lcf.777LKia(/(*)/)
 
-@<FX7L.inf> 0 1111,0 1111
+@<FX7L1.inf> 0 1111,0 1111
+@<FX7L2.inf> 0 1111,0 1111
 
 []{
 {
@@ -49,6 +50,9 @@ return=FXAA
 ;-Matrix-
 	{
 float 4*8 MatrixX=(Yellow,Purple,Pink,Red,Green,Blue,Black,White) 
+float 4 Red=(245,5,5,(Bright-5))
+float 4 Green=(5,235,5,(Bright-5))
+float 4 Blue=(5,5,240,(Bright-5))
 float 4 Yellow=(Red,(Green-5),0,(Bright-5))
 float 4 Purple=((Red-150),0,Blue,(Bright-5))
 float 4 Pink=(Red,10,(Blue-120),(Bright-5))
@@ -132,8 +136,8 @@ return=1
 }
 ;Audio 
 Volume*{
-bitrate1=60,80,128,200,500,800,1000|((Base<->Mid<->High)*VOLBoost1)
-bitrate2=((Base<->Mid<->High)*VOLBoost2)
+bitrate1=60,80,128,200,500,800,1100|((Base<->Mid<->High)*VOLBoost1)
+bitrate2=(bitrate1|Base<->Mid<->High)*VOLBoost2)
 return=bitrate2
 }	
 ;SpeedNeeds
