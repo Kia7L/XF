@@ -2,15 +2,15 @@
 ;-Involve--------
 Mass=700%|Skyn3t
 ;Oculus Quest-x,y Yours May Varry...
-xx=4920|Width
-yy=4080|Hieght
+xx=3920|Width
+yy=3080|Hieght
 Bright=0x1111
 Material=0x1110
-Thinner=1000000
-ScaleSens=90
-Sens=+2
-SoundPower=128
-Sharpener=1000
+Thinner=100000
+ScaleSens=0x97
+Sens=-4
+SoundPower=200
+Sharpener=2000
 Max=(100+Base+Mid+Treble)
 Volume=+100
 float 4 Red=255,0,0,155
@@ -20,12 +20,12 @@ float 4 Blue=10,10,255,155
 Volume=1000
 VolumeBoost1=10
 VolumeBoost2=200
-Base=100
-Mid=45
-High=57
-Corsa_1DeSharp=0.6
-Corsa_2Sharp=1.00
-Corsa_3Sharp=2.02
+Base=94
+Mid=20
+High=47
+Corsa_1DeSharp=0.14
+Corsa_2Sharp=1.50
+Corsa_3Sharp=2.00
 ;Formula: To Make Wifi Better Graphics awsome attempting...PIXEL!
 ;Its Desinged for more better video graphics by compensateing degration with the Enhanced Coded Vers.
 PixelDegrade=/(1.4/1*0)
