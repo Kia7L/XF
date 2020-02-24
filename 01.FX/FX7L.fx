@@ -1,8 +1,8 @@
 ;;  #     ####    ;;
 ;;  #       #     ;;
 ;;  ### #  #  #   ;; #By lcf.777LKia(/(*)/)
-@<<FX7L.inf>>
-?<<FX7L.inf>>
+@<FX7L.inf> 0111
+
 []{
 {
 ;Polorized Screen
