@@ -89,8 +89,13 @@ return Sharp
 }
 ;-Sens-VR-Sens-NEW-MY-7L-VERS.001
 	{ ;JUST ADD IN NAMES OF SYSTEMS.SYSTEM2.3.4...
-float1 OCULUS.CONTROLLER.MOUSE.VR.1*yy=<int><ScaleSens>((xx,yy)<-Sens>0x0FF>0x0F)*xx 1
-float3 OCULUS.CONTROLLER.MOUSE.VR.2*yy=<int>((xx,yy)>0xFF>0x0F)*xx 11
+float (MIXREALITY.PORTAL.OCULUS.CONTROLLER.MOUSE.VR.VIRUTUALREALITY.1)*yy=<int><ScaleSens>((xx,yy)<-Sens>0x0FF>0x0F),<int><ScaleSens>((xx,yy)<-Sens>0x0FF>0x0F)*xx 1110
+float (MIXREALITY.PORTAL.OCULUS.CONTROLLER.MOUSE.VR.VIRUTUALREALITY.2)*yy=<int>((xx,yy)>0xFF>0x0F),<int>((xx,yy)>0xFF>0x0F)*xx 1110
+return=1
+}
+;-OBJECT-BOUNDRY
+	{ 
+float PLAYER.1.2.TEAM.A.B=(FF)*F
 return=1
 }
 ;-Compressor-
