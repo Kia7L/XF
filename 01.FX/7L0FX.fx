@@ -39,13 +39,13 @@ return=(corsa1<->corsa2<->corsa3)
 }
 ;-FXAA-7L
 	{
-float cpu=-410
-float Ramp=-100<->cpu<->-100
-float PrePerform=0.8
-float Performance=5
-float Average=9.0
-float Quality=9.2
-float FXAA=Ramp,((PrePerformane*2),(Performance*2),(Average*2),Quality)-Sharpener
+float cpu=-50
+float Ramp=-100<->cpu<->100
+float PrePerform=0.5
+float Performance=1
+float Average=5.0
+float Quality=8.9
+float FXAA=(Ramp,PrePerformane,Performance,Average,Quality)-Sharpener
 return=FXAA
 }
 ;-Matrix-
