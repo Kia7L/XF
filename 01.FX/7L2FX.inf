@@ -1,17 +1,16 @@
 [.fx]{
-Update=(10*100)
+Update=1600
 
 [Variables]{
-Red=255
-Green=200
-Blue=172
-Fader=140
-Bright=240
-Shadow=50
-Blure=42
-Sharp=255
-Pixel=2
-Enhanced=255
+Red=100%
+Green=200%
+Blue=150%
+Bright=99%
+Shadow=10.9%
+Blure=4%
+Sharp=150%
+Pixel=2%
+Enhanced=100%
 }
 
 [FX]{

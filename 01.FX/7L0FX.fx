@@ -64,8 +64,8 @@ return=Formula
 }
 ;MATERIAL
 	{
-float 4 Material*yy=(float 2(xx/2/+1/-1/0*0,yy/2/+1/-1/0*0),float 2(xx/2/+1/-1/0*0,yy/2/+1/-1/0*0))*xx
-return=1
+float 4 Material=(float 2(xx/2/+1/-1/0*0,yy/2/+1/-1/0*0),float 2(xx/2/+1/-1/0*0,yy/2/+1/-1/0*0))
+return=Material
 }
 ;-FishEyeGraphics-
 	{
@@ -157,5 +157,11 @@ return=Sonic
 ;Battery Less Amount Possible Set... Boost Adjusted...
 float 4 Battery.Currently=(100/9)*0.92 1111
 return=Battery
+}
+;Matter
+{
+float4 color=(float2 (xx,yy),float2 (xx,yy))*100%;
+float4 matter=(color,(1/100)*489)
+return=matter
 }
 }
