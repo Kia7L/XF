@@ -4,7 +4,7 @@
 
 @<7L1FX.inf> 0 1111,0 1111
 @<7L2FX.inf> 0 1111,0 1111
-@<7L3MixOculusVive.inf> 4 1110 , 0 1110
+@<7L3MixOculusVive.inf> 40 1110 ,00 1110
 
 []{
 ;/*"[zz]"0X70=PIXELED/ALIAS OR 0X77=BETTER/LAYER/ALIAS*/
@@ -75,8 +75,8 @@ return Sharp
 }
 ;-Sens-VR-Sens-NEW-MY-7L-VERS.001
 	{ ;JUST ADD IN NAMES OF SYSTEMS.SYSTEM2.3.4...
-float (MIXREALITY.PORTAL.OCULUS.CONTROLLER.MOUSE.VR.VIRUTUALREALITY.1)*yy=<int><ScaleSens>((xx,yy)<-Sens>0x0FF>0x0F),<int><ScaleSens>((xx,yy)<-Sens>0x0FF>0x0F)*xx 1110
-float (MIXREALITY.PORTAL.OCULUS.CONTROLLER.MOUSE.VR.VIRUTUALREALITY.2)*yy=<int>((xx,yy)>0xFF>0x0F),<int>((xx,yy)>0xFF>0x0F)*xx 1110
+float (MIXREALITY.PORTAL.OCULUS.CONTROLLER.MOUSE.VR.VIRUTUALREALITY.1)*yy=ScaleSens<((xx,yy)<-Sens>0x0FF>0x0F),ScaleSens<((xx,yy)<-Sens>0x0FF>0x0F)*xx 1110
+float (MIXREALITY.PORTAL.OCULUS.CONTROLLER.MOUSE.VR.VIRUTUALREALITY.2)*yy=((xx,yy)>0xFF>0x0F),<int>((xx,yy)>0xFF>0x0F)*xx 1110
 return=1
 }
 ;-OBJECT-BOUNDRY
@@ -147,7 +147,7 @@ return Battery
 }
 ;Matter
 {
-float*zz color=(float2 (xx,yy),float2 (xx,yy))*100%;
+float*zz color=(float2 (xx,yy),float2 (xx,yy))*200%;
 float*zz matter=(color,(1/100)*489)
 return=matter
 }
