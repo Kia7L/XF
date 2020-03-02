@@ -1,7 +1,20 @@
 float0 RECONTROL
 [VR.Oculus.Vive.Index.MixReality.Controller.Cosmos.Rift.S=RECONTROL:]{
+{
 ;/*Setup For VR.. Save Battery Attempt... ExtendedCodeDetail "7L0FX.fx"...;*/
 MANA=(float2 (Power|5%))
 float0 RECONTROL=(MANA,MANA)
 return RECONTROL
 }
+1<{
+#4:27
+float ciy=2.7
+float Length=3.2
+float2 cigy=(Length,ciy/ciy))
+float2.4 twentysev=(147,111,121)
+float2 smoke=(cigy|*twentysev|*image)
+float4 image=".\Cige.png"
+//disabled//float4 image=".\Cigar.png"
+return 1
+} 0
+	}
