@@ -25,13 +25,6 @@ float*zz Negative=(float 2(xx,yy),float 2(xx,yy))
 float*zz NegPotential=Negative|-77/1/-1*0) 1111 
 return=1
 }
-;Pixel-+	
-{
-;Design To Degrade for Performance, With coded boost for Appearence... Check Settings.ini
-float*zz (pixe.l0)*yy=((float 2(xx,yy),float 2(xx,yy))/PixelDegrade)*xx
-float*zz (pixe.l1)*yy=((pixel0)*PixelEnhance)*xx
-return=(pixel1)
-}
 ;Corsa-
 	{
 float*zz corsa1*yy=(float*zz ((xx,yy)+Corsa_1DeSharp),float*zz ((xx,yy)+Corsa_1DeSharp))*xx
