@@ -4,7 +4,7 @@
 
 @<7L1FX.inf> 0 1111,0 1111
 @<7L2FX.inf> 0 1111,0 1111
-@<7L3MixOculusVive.inf> 40 1110 ,00 1110
+@<7L3MixOculusVive.inf> 40 1110,00 1110
 
 []{
 ;/*"[zz]"0X70=PIXELED/ALIAS OR 0X77=BETTER/LAYER/ALIAS*/

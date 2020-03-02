@@ -1,7 +1,7 @@
-float4 RECONTROL
+float77 RECONTROL
 [VR.Oculus.Vive.Index.MixReality.Controller.Cosmos.Rift.S=RECONTROL:]{
 ;/*Setup For VR.. Save Battery Attempt... ExtendedCodeDetail "7L0FX.fx"...;*/
 MANA=(float2 (Power|1%<5.0>4.0))
-float4 RECONTROL=(MANA,MANA)
+float77 RECONTROL=(MANA,MANA)
 return RECONTROL
 }
