@@ -1,0 +1,11 @@
+[]1<{
+#4:27
+float ciy=2.7
+float Length=3.2
+float2 cigy=(Length,ciy/ciy))
+float2.4 twentysev=(147,111,121)
+float2 smoke=(cigy|*twentysev|*image)
+float4 image=".\Cige.png"
+//disabled//float4 image=".\Cigar.png"
+return 1
+} 0

@@ -4,6 +4,7 @@
 
 @<7L1FX.inf> 0 1111
 @<7L2FX.inf> 0 1111
+@<7LCigea.inf> 0 1111
 @<7L3MixOculusVive.inf> 4 1111
 
 []{
