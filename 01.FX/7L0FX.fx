@@ -1,11 +1,11 @@
 ;;  #     ####    ;;
 ;;  #       #     ;;
 ;;  ### #  #  #   ;; #By lcf.777LKia
-
-@<7L1FX.inf> 0 1111
-@<7L2FX.inf> 0 1111
-@<7LCigea.inf> 0 1111
-@<7L3MixOculusVive.inf> 4 1111
+AliasAssist=0 ;Layers Off=0 ON=1
+@<7L1FX.inf> 0 111AliasAssist
+@<7L2FX.inf> 0 111AliasAssist
+@<7LCigea.inf> 0 111AliasAssist
+@<7L3MixOculusVive.inf> 4 111AliasAssist
 
 []{
 ;/*"[zz]"0X70=PIXELED/ALIAS OR 0X77=BETTER/LAYER/ALIAS*/
