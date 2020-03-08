@@ -25,27 +25,29 @@ Empty=%SystemRoot%\System32\imageres.dll,-55
 [Control Panel\Colors]
 ButtonFace=47 5 5
 ButtonText=255 255 0
-Window=5 5 5
-WindowText=255 20 20
-ActiveBorder=255 0 0
-InactiveBorder=255 0 0
-ActiveTitle=10 99 255
-Background=255 0 0
+Window=145 5 5
+WindowText=80 80 255
+ActiveTitle=0 0 255
+ActiveTitleText=255 0 0
+Background=15 55 240
 Hilight=255 255 10
-HilightText=255 10 10
+HilightText=10 10 255
 HotTrackingColor=155 0 0
+InactiveBorder=200 40 40 
+ActiveBorder=199 199 99 
 InactiveTitle=255 0 0 
+InactiveTitleText=2 2 255
 TitleText=255 40 40
 Scrollbar=10 10 10
-Menu=255 255 0
+Menu=255 25 25
 WindowFrame=255 100 100
 MenuText=255 255 255
-AppWorkspace=255 0 0
+AppWorkspace=25 255 255
 ButtonShadow=128 128 128
 ButtonHilight=192 192 192
 ButtonDkShadow=255 255 255
 ButtonLight=105 105 105
-InfoText=255 0 0
+InfoText=255 255 255
 InfoWindow=100 100 100
 ButtonAlternateFace=192 192 192
 GradientActiveTitle=255 0 0
@@ -54,14 +56,14 @@ MenuHilight=255 200 200
 MenuBar=200 200 0
 
 [Control Panel\Cursors]
-Arrow=%SystemRoot%\cursors\7.nes.ani
+Arrow=%SystemRoot%\cursors\aero_arrow.cur
 Help=%SystemRoot%\cursors\aero_helpsel.cur
-AppStarting=%SystemRoot%\cursors\7.V2.ani
+AppStarting=%SystemRoot%\cursors\aero_working.ani
 Wait=%SystemRoot%\cursors\aero_busy.ani
 NWPen=%SystemRoot%\cursors\aero_pen.cur
 No=%SystemRoot%\cursors\aero_unavail.cur
-SizeNS=%SystemRoot%\cursors\7.V1.ani
-SizeWE=%SystemRoot%\cursors\7.V1.ani
+SizeNS=%SystemRoot%\cursors\aero_ns.cur
+SizeWE=%SystemRoot%\cursors\aero_ew.cur
 Crosshair=
 IBeam=
 SizeNWSE=%SystemRoot%\cursors\aero_nwse.cur
@@ -74,11 +76,11 @@ Hand=%SystemRoot%\cursors\aero_link.cur
 Link=
 
 [Control Panel\Desktop]
-Wallpaper=%UserProfile%\Pictures\7L\Wallpaper\0.jpg
+Wallpaper=
 TileWallpaper=0
-WallpaperStyle=2
+WallpaperStyle=12
 Pattern=
-SolidColor=
+SolidColor=200 0 0
 
 [VisualStyles]
 Path=%SystemRoot%\resources\themes\Aero\AeroLite.msstyles
@@ -87,7 +89,7 @@ Size=NormalSize
 HighContrast=3
 
 [boot]
-SCRNSAVE.EXE=%UserProfile%\Pictures\Wallpaper\7.jpg
+SCRNSAVE.EXE=
 
 [MasterThemeSelector]
 MTSM=RJSPBS
@@ -97,13 +99,13 @@ MTSM=RJSPBS
 SchemeName=@%SystemRoot%\System32\mmres.dll,-800
 
 ;[Slideshow]
-Interval=1000
-Shuffle=1
+Interval=1800000
+Shuffle=0
 ImagesRootPath=%UserProfile%\Pictures\7L\Wallpaper\0.jpg
-Item1Path=%UserProfile%\Pictures\Wallpaper\1.jpg
-Item1Path=%UserProfile%\Pictures\Wallpaper\2.jpg
-Item1Path=%UserProfile%\Pictures\Wallpaper\3.jpg
-Item1Path=%UserProfile%\Pictures\Wallpaper\4.jpg
-Item1Path=%UserProfile%\Pictures\Wallpaper\5.jpg
-Item1Path=%UserProfile%\Pictures\Wallpaper\6.jpg
-Item1Path=%UserProfile%\Pictures\Wallpaper\7.jpg
+Item1Path=%UserProfile%\Pictures\7L\Wallpaper\1.jpg
+Item1Path=%UserProfile%\Pictures\7L\Wallpaper\2.jpg
+Item1Path=%UserProfile%\Pictures\7L\Wallpaper\3.jpg
+Item1Path=%UserProfile%\Pictures\7L\Wallpaper\4.jpg
+Item1Path=%UserProfile%\Pictures\7L\Wallpaper\5.jpg
+Item1Path=%UserProfile%\Pictures\7L\Wallpaper\6.jpg
+Item1Path=%UserProfile%\Pictures\7L\Wallpaper\7.jpg
