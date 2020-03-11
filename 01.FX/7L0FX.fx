@@ -1,6 +1,6 @@
-;;  #     ####    ;;
-;;  #       #     ;;
-;;  ### #  #  #   ;; #By lcf.777LKia
+;;  #     ####   ;;
+;;  #       #    ;;
+;;  ### #  #  #  ;; #By lcf.777LKia
 AliasAssist=0 ;Layers Off=0 
 AliasAssist2=1 ;Layers ON=1
 (@*<7L0FX.ini>) 0 111AliasAssist
