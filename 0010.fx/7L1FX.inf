@@ -2,7 +2,7 @@
 ;-Involve--------
 ;Oculus Quest-x,y Yours May Varry...
 xx=6920|Width
-yy=6080|Hieght
+yy=6080|Height
 Bright=0x1111
 Material=0x00 0x1111
 Thinner=100000
