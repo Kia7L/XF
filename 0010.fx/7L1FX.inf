@@ -16,7 +16,7 @@ Sharp=5000
 
 ;Volume-------
 ;;#.mp3,.mp4,.more
-Volume=74(*.mp3*.wav*.ogg)
+Volume=75((*.mp3)*(*.wav)*(*.ogg))
 VOL1=4
 VOL2=10
 Base=10
