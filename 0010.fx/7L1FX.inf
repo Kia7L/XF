@@ -11,9 +11,8 @@ Sens=1%
 FOV=2000000
 
 ;-CORSA-----------
-Corsa_1DeSharp=0.12
-Corsa_2Sharp=5.00
-Corsa_3Sharp=7.90
+Blure=200
+Sharp=5000
 
 ;Volume-------
 ;;#.mp3,.mp4,.more
