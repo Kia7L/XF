@@ -48,7 +48,7 @@
 	float PrePerform=0.7
 	float Performance=1
 	float Quality=9.2
-	float FXAA=(Ramp,PrePerformane,Performance,Quality)-Sharpener
+	float FXAA=(Ramp,PrePerformane,Performance,Quality)-FramesPerSecond
 	return=FXAA
 	}
 	;-Matrix-
