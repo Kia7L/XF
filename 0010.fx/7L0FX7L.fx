@@ -47,9 +47,8 @@
 	float Ramp=-40000<->cpu<->10
 	float PrePerform=0.7
 	float Performance=1
-	float Average=2.0
 	float Quality=9.2
-	float FXAA=(Average,Ramp,PrePerformane,Performance,Quality,Performance,PrePerformane,Ramp,Average)-Sharpener
+	float FXAA=(Ramp,PrePerformane,Performance,Quality)-Sharpener
 	return=FXAA
 	}
 	;-Matrix-
