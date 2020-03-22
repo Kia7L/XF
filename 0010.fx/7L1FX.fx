@@ -9,6 +9,7 @@ Thinner=100000
 ScaleSens=2%
 Sens=1%
 FOV=2000000
+FramesPerSecond=220
 
 ;-CORSA-----------
 Blure=200
