@@ -88,7 +88,7 @@
 	}
 	;-Compressor-
 	{
-	float Compile=(0xFFFFFFF/=0x01)
+	float Compile=(0xFF/=0x0A)
 	return=1
 	}
 	;-Hemmy-
