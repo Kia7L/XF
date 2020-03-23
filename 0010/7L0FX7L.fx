@@ -44,11 +44,11 @@
 	;-FXAA-7L
 	{
 	float cpu=-5000
-	float Ramp=-40000<->cpu<->10
+	float Ramp=-40000<->cpu<->400
 	float PrePerform=0.7
 	float Performance=1
 	float Quality=9.2
-	float FXAA=(Ramp,PrePerformane,Performance,Quality)-FramesPerSecond
+	float FXAA=(Ramp,PrePerformane,Performance,Quality)+FramesPerSecond
 	return=FXAA
 	}
 	;-Matrix-
