@@ -2,7 +2,7 @@
 {
 	;/*"[4KVideo*4]"0X70:0x1110=PIXELED/ALIAS OR 0X77:0x1111=BETTER/LAYER/ALIAS*/
 	{
-	4KVideo=0 (1111)*8
+	4KVideo=0 (1111)*4
 	}
 	;FOV...
 	{
@@ -16,17 +16,17 @@
 	float*4KVideo Polorized=(Polor/-4/+1/-1)*0 1111
 	return=1
 	}
-	;Shadow Fade
+	;Polorized Screen
 	{
-	float* (Shadow=(float 2(xx,yy),float 2(xx,yy))
-	float4 SHOW=(Shadow<|*(-1))*0 1111
-	return=SHOW
+	float*4KVideo Polor=(float 2(xx,yy),float 2(xx,yy))
+	float*4KVideo Polorized=(Polor/-4/+1/-1)*0 1111
+	return=1
+	}
+	;Polorized Screen
 	{
-	;Light Fade
-	{
-	float* (FLASH=(float 2(xx,yy),float 2(xx,yy))
-	float4 LIGHT=(FLASH>|*(+3))*0 1111
-	return=LIGHT
+	float*4KVideo Polor=(float 2(xx,yy),float 2(xx,yy))
+	float*4KVideo Polorized=(Polor/-4/+1/-1)*0 1111
+	return=1
 	}
 	;Croma 
 	{
@@ -56,11 +56,11 @@
 	;-FXAA-7L
 	{
 	float cpu=-5000
-	float Ramp=-40000<->cpu<->400;HOTTER.more
+	float Ramp=-40000<->cpu<->10
 	float PrePerform=0.7
 	float Performance=1
 	float Quality=9.2
-	float FXAA=(Ramp,PrePerform,Performance,Quality)*FramesPerSecond
+	float FXAA=(Ramp,PrePerformane,Performance,Quality)-FramesPerSecond
 	return=FXAA
 	}
 	;-Matrix-
@@ -100,12 +100,12 @@
 	}
 	;-Compressor-
 	{
-	float Compile=(0xFF/0x0A/1%)
+	float Compile=(0xFF/=0x0A)
 	return=1
 	}
 	;-Hemmy-
 	{
-	float RAM=(0x13,0x03,0x00,0xFF>@|(400%)|dot={(\|*|_|-|.|,|?|!|%|$|~|@)} #include (dot.*)
+	float RAM=(0x13,0x03,0x00,0xFF>@|(100%)|dot={(\|*|_|-|.|,|?|!|%|$|~|@)} #include (dot.*)
 	return=1
 	}
 	;-VR-COMPATIBLE-ENABLED-

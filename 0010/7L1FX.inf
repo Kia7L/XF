@@ -25,7 +25,7 @@ Mid=4
 High=25
 
 ;PIXIE------------------------------
-Sharpener=2
+Sharpener=100
 PixelDegrade=/(4%); 0 1110
 PixelEnhance=*(400%)-Sharpener; 0 1110
 }
